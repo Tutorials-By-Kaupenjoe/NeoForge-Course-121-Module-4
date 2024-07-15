@@ -1,0 +1,10 @@
+{
+  "values": {
+    "mccourse:tomato": {
+      "chance": 0.45
+    },
+    "mccourse:tomato_seeds": {
+      "chance": 0.2
+    }
+  }
+}
