@@ -1,4 +1,4 @@
-// 1.21	2024-07-15T15:27:10.6348616	Block States: mccourse
+// 1.21	2024-07-16T18:59:35.9187054	Block States: mccourse
 b548ddf1ba2ad5a2d24ac1505a095060da0f300b assets/mccourse/blockstates/black_opal_block.json
 d9ba7c55bae42b6d6fadaef16516e5e401e50636 assets/mccourse/blockstates/black_opal_button.json
 8011a7ad7f38c38738b4f0281d8f963e63e147b7 assets/mccourse/blockstates/black_opal_deepslate_ore.json
@@ -14,6 +14,8 @@ e2b7597798ab27b4d66d71cdcc0056d1331a693b assets/mccourse/blockstates/black_opal_
 95b95553215cc11c7486710707f511114d063dce assets/mccourse/blockstates/black_opal_trapdoor.json
 be95e9c05b17b375eb38929668f451d7cf211456 assets/mccourse/blockstates/black_opal_wall.json
 bc7d21f942c84b754066fc4a8c9f34dc61953149 assets/mccourse/blockstates/magic_block.json
+e0ed4de0c81b30e99f61ecedd57b6075627edc2d assets/mccourse/blockstates/petunia.json
+f8f39fe16da91d6753d7178b7d2160e02ce9611a assets/mccourse/blockstates/potted_petunia.json
 350efab9079195561f26d5623ae2699910f7c5e3 assets/mccourse/blockstates/raw_black_opal_block.json
 6943a34b57da518738a56820fc1114b3610f33cb assets/mccourse/blockstates/tomato_crop.json
 16594933daac66af92459e3f64b9541403a09a5a assets/mccourse/models/block/black_opal_block.json
@@ -51,6 +53,8 @@ d3315bbf94651065488c3233eb298e710c5ab57d assets/mccourse/models/block/black_opal
 0a2b7fc6cb102c1cd93752860f5669803fa99247 assets/mccourse/models/block/black_opal_wall_side.json
 aad34e0c40d36041da04e90471b6ad68b2fe89da assets/mccourse/models/block/black_opal_wall_side_tall.json
 e3bea00dd7e933deb59eaf492b010a1f8fdd914f assets/mccourse/models/block/magic_block.json
+0d0cbfbc53379a16e48522128dcf49276c037e1d assets/mccourse/models/block/petunia.json
+d9e05ad71a9d917463a88c698067ef29c2fa4552 assets/mccourse/models/block/potted_petunia.json
 92bc8351a686ddaf46e7372dbff2d7cd7223d510 assets/mccourse/models/block/raw_black_opal_block.json
 b1cf612c2245f4bea4b505860dfd0960f0a26328 assets/mccourse/models/block/tomato_crop_stage0.json
 9ff84b970b0ad8d703a717bc3f163ff3a11e386a assets/mccourse/models/block/tomato_crop_stage1.json

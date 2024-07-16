@@ -29,6 +29,14 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModBlocks.BLACK_OPAL_DOOR.asItem());
         basicItem(ModItems.TOMATO_SEEDS.get());
+
+        flowerItem(ModBlocks.PETUNIA);
+    }
+
+    public void flowerItem(DeferredBlock<Block> block) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("item/generated"))
+                .texture("layer0",  ResourceLocation.fromNamespaceAndPath(MCCourseMod.MOD_ID,
+                        "block/" + block.getId().getPath()));
     }
 
     public void buttonItem(DeferredBlock<Block> block, DeferredBlock<Block> baseBlock) {
