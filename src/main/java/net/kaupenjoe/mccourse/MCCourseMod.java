@@ -3,8 +3,11 @@ package net.kaupenjoe.mccourse;
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.item.ModCreativeModeTabs;
 import net.kaupenjoe.mccourse.item.ModItems;
+import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.block.FlowerPotBlock;
+import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -86,6 +89,17 @@ public class MCCourseMod {
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        }
+
+        @SubscribeEvent
+        public static void registerColoredBlocks(RegisterColorHandlersEvent.Block event) {
+            event.register((pState, pLevel, pPos, pTintIndex) -> pLevel != null &&
+                    pPos != null ? BiomeColors.getAverageFoliageColor(pLevel, pPos) : FoliageColor.getDefaultColor(), ModBlocks.COLORED_LEAVES.get());
+        }
+
+        @SubscribeEvent
+        public static void registerColoredItems(RegisterColorHandlersEvent.Item event) {
+            event.register((pStack, pTintIndex) -> FoliageColor.getDefaultColor(), ModBlocks.COLORED_LEAVES);
         }
     }
 }

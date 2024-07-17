@@ -74,6 +74,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> POTTED_PETUNIA = BLOCKS.register("potted_petunia",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), PETUNIA, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_ALLIUM)));
 
+    public static final DeferredBlock<Block> COLORED_LEAVES = registerBlock("colored_leaves",
+            () -> new Block(BlockBehaviour.Properties.of().noOcclusion()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

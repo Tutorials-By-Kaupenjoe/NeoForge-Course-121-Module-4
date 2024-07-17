@@ -59,6 +59,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 models().cross(blockTexture(ModBlocks.PETUNIA.get()).getPath(), blockTexture(ModBlocks.PETUNIA.get())).renderType("cutout"));
         simpleBlock(ModBlocks.POTTED_PETUNIA.get(), models().singleTexture("potted_petunia", ResourceLocation.parse("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.PETUNIA.get())).renderType("cutout"));
+
+        leavesBlock(ModBlocks.COLORED_LEAVES);
+    }
+
+    private void leavesBlock(DeferredBlock<Block> deferredBlock) {
+        simpleBlockWithItem(deferredBlock.get(),
+                models().singleTexture(deferredBlock.getId().getPath(), ResourceLocation.parse("minecraft:block/leaves"),
+                        "all", blockTexture(deferredBlock.get())).renderType("cutout"));
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {

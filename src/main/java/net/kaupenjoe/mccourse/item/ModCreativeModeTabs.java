@@ -62,6 +62,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.BLACK_OPAL_TRAPDOOR);
 
                         pOutput.accept(ModBlocks.PETUNIA);
+                        pOutput.accept(ModBlocks.COLORED_LEAVES);
 
                     }).build());
 
